@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 @Table(name = "File")
 @Data
 @NoArgsConstructor
+@Builder
 public class File {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

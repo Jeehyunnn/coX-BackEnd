@@ -3,9 +3,9 @@ spring:
     name: coX
 
   datasource:
-    url: jdbc:mariadb://localhost:3306/coX
-    username: admin
-    password: 07080708
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.mariadb.jdbc.Driver
 
   jpa:
@@ -14,4 +14,4 @@ spring:
     show-sql: true
 
 server:
-  port: 7878  # 7878? ??? ??
+  port: 7878  # 7878 포트번호 변경

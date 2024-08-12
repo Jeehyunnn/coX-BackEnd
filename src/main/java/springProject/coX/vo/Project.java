@@ -9,6 +9,7 @@ import java.util.Date;
 @Table(name = "Project")
 @Data
 @NoArgsConstructor
+@Builder
 public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 @Table(name = "Notification")
 @Data
 @NoArgsConstructor
+@Builder
 public class Notification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
