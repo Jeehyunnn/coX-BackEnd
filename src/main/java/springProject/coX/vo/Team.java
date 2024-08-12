@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 @Table(name = "Team")
 @Data
 @NoArgsConstructor
+@Builder
 public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
