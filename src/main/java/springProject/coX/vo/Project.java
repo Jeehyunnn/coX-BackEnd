@@ -9,6 +9,7 @@ import java.util.Date;
 @Table(name = "Project")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Project {
     @Id

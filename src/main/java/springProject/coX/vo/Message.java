@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 @Table(name = "Message")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Message {
     @Id

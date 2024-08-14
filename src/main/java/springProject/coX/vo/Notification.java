@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 @Table(name = "Notification")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Notification {
     @Id
@@ -22,8 +23,8 @@ public class Notification {
     @Column(nullable = false)
     private String message;
 
-    @Column(nullable = false)
+    @Column(name = "read", nullable = false)
     private Boolean read = false;
 
-    private Timestamp timestamp;
+    private Timestamp notiTimestamp;
 }

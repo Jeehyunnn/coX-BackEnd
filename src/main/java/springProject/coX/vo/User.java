@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 @Table(name = "User")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class User {
     @Id
