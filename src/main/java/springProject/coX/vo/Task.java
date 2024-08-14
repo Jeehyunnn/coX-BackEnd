@@ -10,6 +10,7 @@ import java.util.Date;
 @Table(name = "Task")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Task {
     @Id

@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 @Table(name = "File")
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class File {
     @Id
