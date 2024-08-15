@@ -23,8 +23,8 @@ public class Notification {
     @Column(nullable = false)
     private String message;
 
-    @Column(name = "read", nullable = false)
-    private Boolean read = false;
+    @Column(name = "is_read", nullable = false)
+    private Boolean isRead  = false;
 
     private Timestamp notiTimestamp;
 }
