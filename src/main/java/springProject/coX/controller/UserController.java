@@ -22,4 +22,16 @@ public class UserController {
         User user = userService.registerUser(userDTO);
         return ResponseEntity.ok(user);
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> loginUser(@RequestBody UserDTO userDTO) {
+        // 로그인 로직을 처리하는 서비스 메서드를 호출
+        boolean auth = userService.authenticate(userDTO);
+        if (auth) {
+            return ResponseEntity.ok("Login successful");
+        } else {
+            return ResponseEntity.status(401).body("Invalid credentials");
+        }
+    }
+
 }
